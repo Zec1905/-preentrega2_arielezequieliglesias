@@ -1,0 +1,184 @@
+.grid{
+
+    width: 99%;
+    display: grid;
+    }
+
+.grid-template-columns-row{
+    grid-template-columns:1fr 1 fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+
+}
+
+.template-areas{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 80px 400px 50px;
+    grid-template-areas:
+    "nav nav nav"
+    "main main links"
+    "pie pie pie";
+          
+    }
+
+#botonera{
+    grid-area: nav;
+
+}
+
+#centro{
+    grid-area: main;
+}
+
+#links-interes{
+    grid-area: links;
+}
+
+#pie{
+    grid-area: pie;
+}
+
+.bg-royalblue{
+	background-color:royalblue;
+}
+
+/* TIENDA CON GRID */
+
+/* css general */
+
+.filters{
+    padding: 0 20px 30px 30px;
+}
+    .filters a{
+        color:rgb(134, 130, 132);
+        text-decoration: none;
+        margin-bottom: 4px;
+        text-transform: lowercase;
+    }
+
+    .filters a:hover{
+        color: royalblue;
+    }
+
+    filters span{
+        display:block;
+        color: black;
+        margin: 10px 0;
+        letter-spacing: 1px;
+    }
+
+    .filters select{
+        color:royalblue;
+        border: none;
+        background-color: white;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+    }
+
+    .filters li{
+        padding-left: 10px;
+        list-style: none;
+    }
+
+.actions{
+    display: flex;
+    justify-content: flext-end;
+    align-items: center;
+}
+
+.actions button{
+    margin-right: 10px;
+    background-color: royalblue;
+    color: white;
+    padding: 6px;
+    border: none;
+    border-radius: 3px;
+}
+
+.actions input{
+    padding: 6px;
+    border-radius: 3px;
+    border: none;
+    background-color: white;
+}
+
+.tienda{
+    display: grid;
+    grid-template-columns: 20% repeat(2,1fr);
+    grid-template-rows: 80px repeat(7,300px);
+    grid-template-areas: 
+    "actions actions actions"
+    "filters uno dos"
+    "filters tres cuatro"
+    "filters cinco seis"
+    "filters siete ocho"
+    "filters nueve diez"
+    "filters once doce"
+
+
+    
+}
+
+.tienda section{
+    border-radius: 10px;
+}
+
+.tienda .actions{
+    background-color: white;
+    padding: 0 30px;
+    grid-area: actions;
+}
+
+.tienda .filters{
+    grid-area: filters;
+
+}
+
+.tienda .prod1{
+    grid-area: uno;
+}
+
+.tienda .prod2{
+    grid-area: dos;
+}
+
+.tienda .prod3{
+    grid-area: tres;
+}
+
+.tienda .prod4{
+    grid-area: cuatro;
+}
+
+.tienda .prod5{
+    grid-area: cinco;
+}
+
+.tienda .prod6{
+    grid-area: seis;
+}
+
+.tienda .prod7{
+    grid-area: siete;
+}
+
+.tienda .prod8{
+    grid-area: ocho;
+}
+
+.tienda .prod9{
+    grid-area: nueve;
+}
+
+.tienda .prod10{
+    grid-area: diez;
+}
+
+.tienda .prod11{
+    grid-area: once;
+}
+
+.tienda .prod12{
+    grid-area: doce;
+}
+

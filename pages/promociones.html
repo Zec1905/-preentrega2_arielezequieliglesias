@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <title>Bootstrap demo</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"
+          ><img
+            src="../img/Logo/logometatron.png"
+            alt=""
+            width="45"
+            height="45"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="promociones.html">Promociones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="locales.html">Locales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="my-1"></div>
+
+    <div class="container d-flex flex-row-reverse">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <div>
+                <form class="d-flex" role="Buscar">
+                  <input
+                    class="form-control me-2"
+                    type="Buscar"
+                    placeholder="Buscar"
+                    aria-label="Buscar"
+                  />
+                  <button class="btn btn-outline-primary" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/> </svg>
+                  </button>
+                  
+                  
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="my-3"></div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-3">
+          <div class="" style="width: 18rem">
+            <div class="card-body">
+              <div class="dropdown">
+                <a
+                  class="btn btn-primary dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorias
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Remera</a></li>
+                  <li><a class="dropdown-item" href="#">Buzo</a></li>
+                  <li><a class="dropdown-item" href="#">Remera</a></li>
+                  <li><a class="dropdown-item" href="#">Pantalon</a></li>
+                </ul>
+              </div>
+
+              <div class="my-2">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Negro (2)</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blanbco (4)</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Violeta (2)</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Gris (1)</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Multicolor (1)</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="my-2">
+                <h5 class="btn btn-primary">Tamaños</h5>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" />
+                  <label class="form-check-label" for="defaultCheck1">S</label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" />
+                  <label class="form-check-label" for="defaultCheck1">MD</label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" />
+                  <label class="form-check-label" for="defaultCheck1">LG</label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" />
+                  <label class="form-check-label" for="defaultCheck1">XL</label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" />
+                  <label class="form-check-label" for="defaultCheck1"
+                    >XXL</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-9">
+         
+					<div class="md-9">
+						<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="../img/Productos/Promociones/promo1.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="../img/Productos/Promociones/promo2.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="../img/Productos/Promociones/promo 3.jpg" class="d-block w-100" alt="...">
+								</div>
+							</div>
+							<button class="carousel-control-prev color-black" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</div>
+<div class="my-5"></div>
+          <div class="card-group">
+            <div class="card">
+              <img
+                src="../img/Productos/Promociones/promo 4.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                src="../img/Productos/Promociones/promo5.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This card has supporting text below as a natural lead-in to
+                  additional content.
+                </p>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >Last updated 3 mins ago</small
+                  >
+                </p>
+              </div>
+            </div>
+
+            
+
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="my-5"></div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="container">Navegacion</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >INICIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PRODUCTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PROMOCIONES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">LOCALES</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <h5 class="container">Medios de pago</h5>
+            <img
+              src="../img/mediosdepago/mp.jpeg"
+              alt="..."
+              width="400"
+              height="200"
+            />
+          </div>
+
+          <div class="col-md-4">
+            <h5 class="container">Ubicacion</h5>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.764785476586!2d-58.36735728476944!3d-34.63538388045129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334b6925e5473%3A0x1ca5b2748858b40d!2sEstadio%20Alberto%20J.%20Armando!5e0!3m2!1ses!2sar!4v1678055355243!5m2!1ses!2sar"
+              width="600"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+      integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
