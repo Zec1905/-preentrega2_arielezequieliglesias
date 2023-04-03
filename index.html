@@ -1,35 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/Logo/logozec.png" type="image/x-icon">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/grid.css">
     <title>E-Zec</title>
-   <!-- link a mi css externo -->
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/grid.css">
-  
-</head>
-<body class="bg-pattern">
-     <nav>
-     <a href="index.html">
-        <img src="img/Logo/logometatron.png" alt="Logo E-Zec"></a>
-        <ul>
-            <li>
-               <a href="pages/productos.html">Productos </a>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            src="img/Logo/logometatron.png"
+            alt=""
+            width="45"
+            height="45"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="pages/productos.html">Productos</a>
             </li>
-            <li>
-               <a href="pages/promociones.html">Promociones </a>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/promociones.html">Promociones</a>
             </li>
-            <li>
-               <a href="pages/locales.html">Locales </a>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/locales.html">Locales</a>
             </li>
-            <li>
-                <a href="pages/contacto.html">Contacto </a>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/contacto.html">Contacto</a>
             </li>
-        </ul>
-     </nav>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
      <!-- ends nav -->
      <header>
         <img src="img/Iconos/header-home.png" alt="Imagen Promo">
@@ -108,28 +133,69 @@
      
    </div>
 <!-- Inicia Footer -->
-<footer>
-             <div>
-             <p>NAVEGACION</p>
-           <h3><a class="subr" href="index.html">INICIO</a></h3> 
-           <h3><a class="subr" href="pages/productos.html">PRODUCTOS</a></h3> 
-           <h3><a class="subr" href="pages/promociones.html">PROMOCIONES</a></h3>
-           <h3><a class="subr" href="pages/contacto.html">CONTACTO</a></h3>
-           <h3><a class="subr" href="pages/locales.html">LOCALES</a></h3>
-           </div>
-            <div>
-          <p>MEDIOS DE PAGO</p>
-          <img
-            src="img/mediosdepago/mp.jpeg"
-            alt=""
-            width="400"
-            height="250"/>
-            </div>
-         <div>
-          <p>UBICACION</p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.764785476586!2d-58.36735728476944!3d-34.63538388045129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334b6925e5473%3A0x1ca5b2748858b40d!2sEstadio%20Alberto%20J.%20Armando!5e0!3m2!1ses!2sar!4v1678055355243!5m2!1ses!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>              </div>
-         </div>
-</footer>
+<div class="my-5"></div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="container">Navegacion</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >INICIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/productos.html">PRODUCTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/promociones.html">PROMOCIONES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/locales.html">LOCALES</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <h5 class="container">Medios de pago</h5>
+            <img
+              src="img/mediosdepago/mp.jpeg"
+              alt="..."
+              width="400"
+              height="200"
+            />
+          </div>
+
+          <div class="col-md-4">
+            <h5 class="container">Ubicacion</h5>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.764785476586!2d-58.36735728476944!3d-34.63538388045129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334b6925e5473%3A0x1ca5b2748858b40d!2sEstadio%20Alberto%20J.%20Armando!5e0!3m2!1ses!2sar!4v1678055355243!5m2!1ses!2sar"
+              width="600"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
 <!-- ends footer -->
+<script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+      integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+      crossorigin="anonymous"
+    ></script>
 </body>
 </html>
