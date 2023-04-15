@@ -1,5 +1,24 @@
 // nesting /anidacion
-.botonera{
-    
-
+.botonera {
+    background-color: $mainColor;
+    img{
+        width: 150px;
+    }
+    ul{
+        li{
+            a{
+                color: $whiteColor;
+                text-decoration: none;
+                font-size: $textSm;
+                font-family: $mainFont;
+                font-weight: $textLight;
+                &:hover{
+                    color: $keyColor;
+                }
+            }
+        }
+    }
+    img{
+        width: 120px;
+    }
 }

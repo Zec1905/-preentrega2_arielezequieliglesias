@@ -1,3 +1,249 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap");
+h1,
+h2,
+h3 {
+  color: royalblue;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.4em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+label {
+  color: royalblue;
+}
+
+p {
+  color: royalblue;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+}
+
+.botonera {
+  background-color: royalblue;
+}
+.botonera img {
+  width: 150px;
+}
+.botonera ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.botonera ul li a:hover {
+  color: royalblue;
+}
+.botonera img {
+  width: 120px;
+}
+
+.productos {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.productos figure {
+  width: 30%;
+  border-radius: 4px;
+  border: solid gray 1px;
+  margin-bottom: 20px;
+}
+.productos figure p {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  margin: 20px 0;
+  text-align: left;
+}
+.productos figure img {
+  width: 50%;
+}
+.productos figure figcaption {
+  color: royalblue;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+.productos figure button {
+  border: none;
+  background-color: royalblue;
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+@media (width < 768px) {
+  .tienda {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat 6, auto;
+    grid-template-areas: "actions" "filters" "uno" "dos" "tres" "cuatro" "cinco" "seis" "siete" "ocho" "nueve" "diez" "once" "doce";
+  }
+}
+.newletter {
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.filters {
+  padding: 0 20px 30px 30;
+}
+.filters a {
+  color: rgb(134, 130, 132);
+  font-size: 1.3em;
+  text-decoration: none;
+  margin-bottom: 4px;
+  text-transform: lowercase;
+}
+.filters a:hover {
+  color: royalblue;
+}
+
+.filters span {
+  display: block;
+  color: rgb(0, 0, 0);
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+.filters select {
+  color: royalblue;
+  border: none;
+  background-color: white;
+  margin-bottom: 10px;
+  font-size: 1.4em;
+}
+.filters li {
+  padding-left: 10px;
+  list-style: none;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.actions button {
+  margin-left: 10px;
+  background-color: royalblue;
+  color: white;
+  padding: 6px;
+  border: none;
+  border-radius: 3px;
+}
+.actions input {
+  padding: 6px;
+  border-radius: 3px;
+  border: none;
+  background-color: royalblue;
+}
+
+.tienda {
+  display: grid;
+  grid-template-columns: 20% repeat(2, 1ft);
+  grid-template-rows: 80px repeat(3, 300px);
+  grid-template-areas: "actions actions actions" "filters uno uno" "filters dos tres" "filters dos cuatro";
+  gap: 5px;
+}
+.tienda section {
+  border-radius: 10px;
+}
+.tienda .actions {
+  padding: 0 30px;
+  grid-area: actions;
+}
+.tienda .filters {
+  grid-area: filters;
+}
+.tienda .prod1 {
+  grid-area: uno;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.tienda .prod2 {
+  grid-area: dos;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tienda .prod3 {
+  grid-area: tres;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tienda .prod4 {
+  grid-area: cuatro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tienda .prod5 {
+  grid-area: cinco;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tienda .prod6 {
+  grid-area: seis;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tienda .prod7 {
+  grid-area: siete;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tienda .prod8 {
+  grid-area: ocho;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tienda .prod9 {
+  grid-area: nueve;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tienda .prod10 {
+  grid-area: diez;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tienda .prod11 {
+  grid-area: once;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tienda .prod12 {
+  grid-area: doce;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /*# sourceMappingURL=main.css.map */

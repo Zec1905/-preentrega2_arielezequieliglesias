@@ -1,0 +1,38 @@
+// productos
+.productos{
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    figure{
+        width: 30%;
+        border-radius: 4px;
+        border: solid gray 1px;
+        margin-bottom: 20px;
+        p{
+            font-size: 1rem;
+            line-height: 1.2rem;
+            margin: 20px 0;
+            text-align: left;
+        }
+        img{
+            width: 50%;
+        }
+        figcaption{
+            color: $mainColor;
+            font-size: $textMd;
+            margin-top: 10px;
+
+        }
+        button{
+            border: none;
+            background-color: $mainColor;
+            color: white;
+            border-radius:8px;
+            padding:10px ;
+            margin-bottom: 20px;
+        }
+    }
+}

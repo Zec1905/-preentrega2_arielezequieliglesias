@@ -1,0 +1,31 @@
+h1,
+h2,
+h3 {
+    color:$mainColor;
+    font-family: $mainFont;
+    font-weight: $textBold;
+    margin-bottom: 20px;
+
+
+}
+h1{
+    font-size: $textLg;
+}
+h2{
+    font-size: $textMd;
+}
+h3{
+    font-size: $textMd
+}
+label{
+    color: $mainColor;
+}
+
+
+p{
+    color: $keyColor;
+    font-weight:  $textBold;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+
+}

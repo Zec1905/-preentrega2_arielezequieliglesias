@@ -1,0 +1,24 @@
+// resposive
+
+@media (width <768px){
+    .tienda{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (6,auto);
+        grid-template-areas:
+        "actions"
+        "filters"
+        "uno"
+        "dos"
+        "tres"
+        "cuatro"
+        "cinco"
+        "seis"
+        "siete"
+        "ocho"
+        "nueve"
+        "diez"
+        "once"
+        "doce";
+
+    }
+}
