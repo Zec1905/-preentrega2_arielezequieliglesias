@@ -21,4 +21,81 @@
         "doce";
 
     }
+    .tienda section{
+        padding: 10px 0;
+        margin: 0 20px;
+    }
+
+    nav{
+        justify-content: center;
+    }
+
+    .tienda .prod1{
+        flex-direction: column;
+    }
+
+    nav ul,
+    .filters span,
+    .filters ul,
+    .filters label[for="mediano"],
+    .filters label[for="grande"],
+    .filters input[type="checkbox"]{
+        display: none;
+    }
+
+    .filters select{
+        background-color: rgb(243, 245, 245);
+        display: block;
+        width: 90%;
+        margin: auto;
+        padding: 6px;
+        border-radius: 4px;
+    }
+
+    .actions{
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .action input [placeholder="buscar"]{
+        width: 350px;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+        footer svg{
+            width: 40px;
+        }
+
+        footer div:nth-wild(2){
+            margin: 10px 0;
+        }
+
+        footer a{
+            font-size: 1.6em;
+        }
+
+    .productos figure{
+        width: 100%;
+    }
+    
+    .productos figure img{
+        width: 300px;
+    }
+
+    .productos p{
+        padding: 20px;
+        font-size: 1.6em;
+        line-height: 1.8em;
+    }
+
 }
+
+@media (width < 320px){
+    nav img{
+        width: 120px;
+    }
+}
+
+

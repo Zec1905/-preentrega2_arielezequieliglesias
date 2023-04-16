@@ -27,5 +27,30 @@ p{
     font-weight:  $textBold;
     font-size: 1.4rem;
     line-height: 1.5rem;
+    padding: 0 20px;
+    font-weight: 300;
 
+}
+
+footer{
+    padding: 20px 30px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+
+    footer svg{
+        fill: royalblue;
+        width: 30px;
+        margin-right: 10px;
+    }
+
+    footer a{
+        text-decoration: none;
+        display: block;
+        color: royalblue;
+        font-size: 0.8rem;
+        margin-bottom: 4px;
+    }
 }
