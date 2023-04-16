@@ -153,5 +153,16 @@
         justify-content: center;
         align-items: center;
     }
-    
+
+}
+
+main{
+    section{
+        p{
+            @include textos(1.2em, 1.6em, black)
+        }
+        article{
+            @include flex(row,flex-end,center)
+        }
+    }
 }

@@ -38,7 +38,8 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: gray;
+    background-color: $whiteColor;
+
 
     footer svg{
         fill: royalblue;
@@ -54,3 +55,11 @@ footer{
         margin-bottom: 4px;
     }
 }
+
+    main{
+        section{
+            p{
+                @include textos(1.2em, 1.6em, black)
+            }
+        }
+    }

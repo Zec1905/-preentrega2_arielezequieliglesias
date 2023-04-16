@@ -1,4 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap");
+.btn-gral, .btn-rounded {
+  border: none;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background: linear-gradient to top, royalblue, darkcyan;
+}
+
+.btn-rounded {
+  border-radius: 4px;
+}
+
+.box-gral, .box-gray {
+  width: 98%;
+  padding: 10px 60px;
+  margin: auto;
+}
+
+.box-gray {
+  background-color: gray;
+}
+
 h1,
 h2,
 h3 {
@@ -29,6 +53,36 @@ p {
   font-weight: 700;
   font-size: 1.4rem;
   line-height: 1.5rem;
+  padding: 0 20px;
+  font-weight: 300;
+}
+
+footer {
+  padding: 20px 30px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+footer footer svg {
+  fill: royalblue;
+  width: 30px;
+  margin-right: 10px;
+}
+footer footer a {
+  text-decoration: none;
+  display: block;
+  color: royalblue;
+  font-size: 0.8rem;
+  margin-bottom: 4px;
+}
+
+main section p {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  color: black;
+  font-family: "Roboto", sans-serif;
 }
 
 .botonera {
@@ -86,21 +140,6 @@ p {
   border-radius: 8px;
   padding: 10px;
   margin-bottom: 20px;
-}
-
-@media (width < 768px) {
-  .tienda {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat 6, auto;
-    grid-template-areas: "actions" "filters" "uno" "dos" "tres" "cuatro" "cinco" "seis" "siete" "ocho" "nueve" "diez" "once" "doce";
-  }
-}
-.newletter {
-  text-align: center;
-  font-size: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
 .filters {
@@ -244,6 +283,101 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.tienda .prod13 {
+  grid-area: trece;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main section p {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+main section article {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media (width < 768px) {
+  .tienda {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat 6, auto;
+    grid-template-areas: "actions" "filters" "uno" "dos" "tres" "cuatro" "cinco" "seis" "siete" "ocho" "nueve" "diez" "once" "doce";
+  }
+  .tienda section {
+    padding: 10px 0;
+    margin: 0 20px;
+  }
+  nav {
+    justify-content: center;
+  }
+  .tienda .prod1 {
+    flex-direction: column;
+  }
+  nav ul,
+  .filters span,
+  .filters ul,
+  .filters label[for=mediano],
+  .filters label[for=grande],
+  .filters input[type=checkbox] {
+    display: none;
+  }
+  .filters select {
+    background-color: rgb(243, 245, 245);
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding: 6px;
+    border-radius: 4px;
+  }
+  .actions {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .action input [placeholder=buscar] {
+    width: 350px;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer svg {
+    width: 40px;
+  }
+  footer div:nth-wild(2) {
+    margin: 10px 0;
+  }
+  footer a {
+    font-size: 1.6em;
+  }
+  .productos figure {
+    width: 100%;
+  }
+  .productos figure img {
+    width: 300px;
+  }
+  .productos p {
+    padding: 20px;
+    font-size: 1.6em;
+    line-height: 1.8em;
+  }
+}
+@media (width < 320px) {
+  nav img {
+    width: 120px;
+  }
+}
+.newletter {
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */
