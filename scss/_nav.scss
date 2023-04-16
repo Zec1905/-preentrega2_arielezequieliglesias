@@ -12,6 +12,13 @@
                 font-size: $textSm;
                 font-family: $mainFont;
                 font-weight: $textLight;
+                // subrayado animado
+                background-image: linear-gradient(currenteColor, currenteColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .3s;
+
                 &:hover{
                     color: $keyColor;
                 }
